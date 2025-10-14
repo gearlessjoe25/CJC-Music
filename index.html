@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/cjclogo.ico" type="image/x-icon"> 
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Water Ripple Effect</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+<body>
+    
+<!-- Navbar -->
+<nav>
+  <div class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+      <img src="img/cjclogo.png" alt="CJC Logo">
+    </div>
+
+    <!-- Menu -->
+    <ul class="menu">
+      <li class="active">CJC MUSIC</li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="releases.html">Releases</a></li>
+      <li><a href="snippets.html">Snippets</a></li>
+    </ul>
+
+<!-- Nav Actions -->
+<div class="nav-actions">
+  <a href="signin.html" class="signin-btn">Sign In</a>
+  <a href="cart.html" class="cart-icon">
+    <img src="img/cart_icon.png" alt="Shopping-Icon">
+  </a>
+  <!-- Hamburger menu -->
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</div>
+  </div>
+
+  <!-- Mobile menu (hidden) -->
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="releases.html">Releases</a></li>
+    <li><a href="snippets.html">Snippets</a></li>
+  </ul>
+  </div>
+</nav>
+  
+<!-- Hero -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Welcome to CJC Music</h1>
+    <p>Take a dive into REAL music</p>
+    <a href="about.html" class="signin-btn">About Us</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-section logo">
+        <a href="index.html">
+          <img src="img/cjclogo.png" alt="CJC Logo" />
+        </a>
+      </div>
+
+    <!-- Main Links -->
+    <div class="footer-section footer-links">
+      <p class="active">CJC MUSIC</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="releases.html">Releases</a>
+      <a href="snippets.html">Snippets</a>
+    </div>
+
+      <!-- Socials -->
+      <div class="footer-section footer-links">
+        <p class="active">SOCIALS</p>
+        <a href="https://open.spotify.com" target="_blank">Spotify</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
+        <a href="https://discord.com" target="_blank">Discord</a>
+      </div>
+
+      <!-- Members -->
+      <div class="footer-section footer-links">
+        <p class="active">MEMBERS</p>
+        <p>Cheyne Jackson</p>
+        <p>Joseph Buadoo</p>
+        <p>Chris Heyward</p>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p>© CJC MUSIC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
