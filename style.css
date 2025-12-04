@@ -163,6 +163,26 @@ body {
   box-shadow: 0 0 10px rgba(180, 0, 255, 0.6);
 }
 
+/* About Us */
+.aboutbutton {
+  background: transparent;
+  border: 1px solid rgb(170, 0, 255);
+  color: #bfbfbf;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.aboutbutton:hover {
+  background: rgb(170, 0, 255);
+  color: white;
+  box-shadow: 0 0 10px rgba(180, 0, 255, 0.6);
+}
+
 /* Cart */
 .cart-icon {
   font-size: 1.2rem;
@@ -180,18 +200,15 @@ body, html {
     height: 100%;
 }
 
-
 .hero-image {
-
-  background-image: url("");
   height: 50%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-top: 400px; 
+  padding-bottom: 200px;
 }
-
 
 .hero-text {
   text-align: center;
@@ -204,11 +221,15 @@ body, html {
 }
 
 .hero-text h1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 64px;   /* Increase this value for bigger */
+  font-weight: 700px;
 }
 
+
 .hero-text p {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  font-size: 22px; 
 }
 
 /* Footer */
@@ -391,33 +412,33 @@ footer {
     gap: 1rem;
   }
 
-  /* Mobile menu hidden */
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: rgba(0,0,0,0.9);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 5px;
-    list-style: none;
-  }
+/* Mobile menu hidden */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  list-style: none;
+}
 
-  .mobile-menu li a {
-    color: #bfbfbf;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-  }
+.mobile-menu li a {
+  color: #bfbfbf;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
 
-  .mobile-menu li a:hover,
-  .mobile-menu li a.active {
-    color: white;
-    text-shadow: 0 0 8px rgba(180, 0, 255, 0.6);
-  }
+.mobile-menu li a:hover,
+.mobile-menu li a.active {
+  color: white;
+  text-shadow: 0 0 8px rgba(180, 0, 255, 0.6);
+}
 }
 
   /* Click ripple animation */
@@ -623,7 +644,7 @@ footer {
     background: none;
     border: none;
     color: #bfbfbf;
-    font-size: 1.6rem;
+    font-size: 24px;
     cursor: pointer;
   }
 
@@ -632,11 +653,10 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 80px;
     background-color: rgba(10, 10, 10, 0.95);
-    border-radius: 10px;
-    width: 180px;
+    border-radius: 16px;
+    width: 100%;
     padding: 1rem;
     list-style: none;
     z-index: 100;
@@ -649,6 +669,7 @@ footer {
 
   .mobile-menu li {
     margin: 10px 0;
+    text-align: center;
   }
 
   .mobile-menu li a {
@@ -918,12 +939,10 @@ footer {
   gap: 10px;
 }
 
-/* Add some padding and a grey background color to containers */
 .container {
   padding: 20px;
 }
 
-/* Style the input elements and the submit button */
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 12px;
@@ -932,7 +951,6 @@ input[type=text], input[type=submit] {
   box-sizing: border-box;
 }
 
-/* Add margins to the checkbox */
 input[type=checkbox] {
   margin-top: 16px;
 }
@@ -941,24 +959,22 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
-/* Center the form and give margins all around */
 form {
   max-width: 400px;
-  margin: 50px auto; /* centers form and adds top/bottom space */
+  margin: 50px auto;
   font-family: Arial, sans-serif;
 }
 
-/* Dark info boxes */
-.container {
-  background-color: #1c1c1c; /* dark background */
+/* about boxes */
+.aboutbox {
+  background-color: #1c1c1c; 
   padding: 20px;
-  margin: 15px 0; /* spacing between boxes */
-  border-radius: 8px; /* rounded corners */
-  color: #f0f0f0; /* light text color for contrast */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle shadow */
+  margin: 15px 0;
+  border-radius: 8px; 
+  color: #f0f0f0; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
 }
 
-/* Input fields styling */
 input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -967,18 +983,94 @@ input[type="email"] {
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
-  background-color: #2b2b2b; /* dark input background */
+  background-color: #2b2b2b;
   color: #f0f0f0;
 }
 
-/* Checkbox spacing */
 input[type="checkbox"] {
   margin-right: 10px;
 }
 
 
-/* Center title and description */
 h2, p {
   text-align: center;
   margin: 5px 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.release-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;   
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.reveal-section.in-view .release-img:hover {
+  transform: translateY(0) scale(1.1) rotateZ(0);
+}
+
+/* Title styles */
+.releases-title {
+  text-align: center;
+  margin: 40px 0 16px;
+  font-size: 30px;
+}
+
+.releases-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.releases-title a:hover {
+  text-decoration: underline;
+}
+
+/* Reveal section */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(60px) rotateX(15deg);
+  transform-origin: top;
+  transition: opacity 1s cubic-bezier(.19,1,.22,1),
+              transform 1s cubic-bezier(.19,1,.22,1);
+}
+
+.reveal-section.in-view {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+.release-img {
+  opacity: 0;
+  transform: translateY(40px) scale(.9) rotateZ(-4deg);
+  transition: transform 0.6s ease-out, opacity .8s ease-out;
+}
+
+.reveal-section.in-view .release-img {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateZ(0);
+}
+
+/*parallax animation */
+.reveal-section.in-view .release-img {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateZ(0);
+}
+
+.release-img:nth-child(1) { transition-delay: .1s; }
+.release-img:nth-child(2) { transition-delay: .25s; }
+.release-img:nth-child(3) { transition-delay: .4s; }
+.release-img:nth-child(4) { transition-delay: .55s; }
+
+.reveal-section.in-view .release-img {
+  box-shadow: 0 0 20px rgba(255,255,255,.15);
 }
