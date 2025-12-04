@@ -3,32 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Releases</title>
+  <title>Snippets</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/cjclogo.ico" type="image/x-icon"> 
+  <link rel="icon" href="img/cjclogo.ico" type="image/x-icon">
 </head>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple Water Ripple Effect</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
 <body>
-    
+
 <!-- Navbar -->
 <nav>
   <div class="navbar">
-    <!-- Logo -->
     <div class="logo">
       <a href="index.html">
       <img src="img/cjclogo.png" alt="CJC Logo">
     </div>
 
-    <!-- Menu -->
     <ul class="menu">
       <li class="active">CJC MUSIC</li>
       <li><a href="index.html">Home</a></li>
@@ -37,29 +25,25 @@
       <li><a class="active" href="snippets.html">Snippets</a></li>
     </ul>
 
-<!-- Nav Actions -->
-<div class="nav-actions">
-  <a href="signin.html" class="signin-btn">Sign In</a>
-  <a href="cart.html" class="cart-icon">
-    <img src="img/cart_icon.png" alt="Shopping-Icon">
-  </a>
-  <!-- Hamburger menu -->
-  <button class="hamburger" id="hamburger">&#9776;</button>
-</div>
+    <div class="nav-actions">
+      <a href="signin.html" class="signin-btn">Sign In</a>
+      <a href="cart.html" class="cart-icon">
+        <img src="img/cart_icon.png" alt="Shopping-Icon">
+      </a>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
   </div>
-
-  <!-- Mobile menu (hidden) -->
+<!-- Mobile -->  
   <ul class="mobile-menu" id="mobileMenu">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="releases.html">Releases</a></li>
     <li><a href="snippets.html">Snippets</a></li>
   </ul>
-  </div>
 </nav>
 
   <!-- Main Content -->
-<div class="about-section">
+<div class="about-section reveal-section parallax-group">
   <h1>CJC Snippets</h1>
   <p>See sneak peaks into out upcoming releases</p>
 </div>
@@ -68,7 +52,7 @@
   <div id="wrap">
     <div id="album">
       <div id="cover">
-        <img src="img/mixedemotions.jpg" alt="Album Cover"/>
+        <img src="img/Mixed Emotions.jpg" alt="Album Cover"/>
         <div id="print"></div>
       </div>
       <div id="vinyl">
@@ -94,70 +78,60 @@
 </script>
 
 <!-- saving data -->
-<div class="shopping-section">
+<div class="shopping-section reveal-section parallax-group">
   <!-- Title and Description -->
   <div class="shopping-header">
-    <h1 class="shopping-title">Mixed Emotions By Joë</h1>
-    <p class="shopping-description">New Swing Beat E Minor 118 BPM</p>
+    <h1 class="shopping-title reveal-section parallax-group">Mixed Emotions By Joë</h1>
+    <p class="shopping-description reveal-section parallax-group">New Swing Beat E Minor 118 BPM</p>
   </div>
 
   <div class="shopping-actions">
   <a href="save.html" class="signin-btn">Pre-Save</a>
 </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <!-- Logo -->
-      <div class="footer-section logo">
-        <a href="index.html">
-          <img src="img/cjclogo.png" alt="CJC Logo" />
-        </a>
-      </div>
+<!-- Footer -->
+<footer>
+  <div class="footer-container reveal-section parallax-group">
+    <!-- Logo -->
+    <div class="footer-section logo">
+      <a href="index.html">
+        <img src="img/cjclogo.png" alt="CJC Logo" />
+      </a>
+    </div>
 
-    <!-- Main Links -->
+<!-- Main Links -->
+  <div class="footer-section footer-links">
+    <p class="active">CJC MUSIC</p>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="releases.html">Releases</a>
+    <a href="snippets.html">Snippets</a>
+  </div>
+
+<!-- Socials -->
     <div class="footer-section footer-links">
-      <p class="active">CJC MUSIC</p>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="releases.html">Releases</a>
-      <a href="snippets.html">Snippets</a>
+      <p class="active">SOCIALS</p>
+      <a href="https://open.spotify.com" target="_blank">Spotify</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
+      <a href="https://discord.com" target="_blank">Discord</a>
     </div>
 
-      <!-- Socials -->
-      <div class="footer-section footer-links">
-        <p class="active">SOCIALS</p>
-        <a href="https://open.spotify.com" target="_blank">Spotify</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
-        <a href="https://discord.com" target="_blank">Discord</a>
-      </div>
-
-      <!-- Members -->
-      <div class="footer-section footer-links">
-        <p class="active">MEMBERS</p>
-        <p>Cheyne Jackson</p>
-        <p>Joseph Buadoo</p>
-        <p>Chris Heyward</p>
-      </div>
+<!-- Members -->
+    <div class="footer-section footer-links">
+      <p class="active">MEMBERS</p>
+      <p>Cheyne Jackson</p>
+      <p>Joseph Buadoo</p>
+      <p>Chris Heyward</p>
     </div>
+  </div>
 
-    <!-- Footer bottom -->
-    <div class="footer-bottom">
-      <p>© CJC MUSIC</p>
-    </div>
-  </footer>
+<!-- Footer bottom -->
+  <div class="footer-bottom reveal-section parallax-group">
+    <p>© CJC MUSIC</p>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-      hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-      });
-    });
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
-
